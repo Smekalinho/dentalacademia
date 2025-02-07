@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Заголовок страницы</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.3/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body class="bg-gray">
+    <svg width="0" height="0" class="hidden">
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 15 9"
+        id="arrow-forward-sm"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11.6716 0.966759L14.8536 4.14874C15.0488 4.344 15.0488 4.66058 14.8536 4.85585L11.6716 8.03783C11.4763 8.23309 11.1597 8.23309 10.9645 8.03783C10.7692 7.84256 10.7692 7.52598 10.9645 7.33072L13.2929 5.00229L0.5 5.00229L0.5 4.00229L13.2929 4.00229L10.9645 1.67387C10.7692 1.4786 10.7692 1.16202 10.9645 0.966759C11.1597 0.771497 11.4763 0.771497 11.6716 0.966759Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13 9"
+        id="quotes"
+      >
+        <path
+          d="M2.4986 4.5164C1.7502 4.4727 1.1588 4.2545 0.7242 3.8618C0.3138 3.4691 0.1086 2.9455 0.1086 2.2909C0.1086 1.5491 0.3621 0.9818 0.8691 0.5891C1.376 0.1964 1.9916 0 2.7159 0C2.74 0 2.7762 0 2.8245 0C3.3315 0.0218 3.7539 0.12 4.0919 0.2945C4.454 0.4691 4.7437 0.7091 4.961 1.0145C5.1783 1.2982 5.3352 1.6364 5.4318 2.0291C5.5283 2.4 5.5766 2.7927 5.5766 3.2073C5.5766 3.7964 5.4559 4.3964 5.2145 5.0073C4.9731 5.6182 4.6351 6.1964 4.2006 6.7418C3.7902 7.2655 3.3073 7.7345 2.7521 8.1491C2.221 8.5418 1.6537 8.8255 1.0501 9L0 7.6909C0.6035 7.32 1.1226 6.8618 1.5571 6.3164C2.0158 5.7491 2.3296 5.1491 2.4986 4.5164ZM9.922 4.5164C9.1736 4.4727 8.5822 4.2545 8.1476 3.8618C7.7372 3.4691 7.532 2.9455 7.532 2.2909C7.532 1.5491 7.7855 0.9818 8.2925 0.5891C8.7994 0.1964 9.415 0 10.1393 0C10.1634 0 10.1996 0 10.2479 0C11.2136 0.0436 11.9136 0.3818 12.3482 1.0145C12.7827 1.6255 13 2.3127 13 3.0764C13 3.12 13 3.1636 13 3.2073C13 3.7964 12.8793 4.3964 12.6379 5.0073C12.3965 5.6182 12.0585 6.1964 11.624 6.7418C11.2136 7.2655 10.7307 7.7345 10.1755 8.1491C9.6444 8.5418 9.0771 8.8255 8.4735 9L7.4234 7.6909C8.0269 7.32 8.546 6.8618 8.9805 6.3164C9.4392 5.7491 9.753 5.1491 9.922 4.5164Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 18 16"
+        id="arrow-back"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17.855 8C17.855 8.1933 17.6983 8.35 17.505 8.35L1.37944 8.35L8.4187 15.3893C8.55539 15.5259 8.55539 15.7476 8.4187 15.8842C8.28202 16.0209 8.06041 16.0209 7.92373 15.8842L0.286975 8.24749C0.150291 8.1108 0.150291 7.8892 0.286975 7.75251L7.92373 0.115759C8.06041 -0.0209245 8.28202 -0.0209246 8.4187 0.115759C8.55539 0.252443 8.55539 0.47405 8.4187 0.610734L1.37944 7.65L17.505 7.65C17.6983 7.65 17.855 7.8067 17.855 8Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 18 16"
+        id="arrow-forward"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.144975 8C0.144975 8.1933 0.301675 8.35 0.494975 8.35L16.6206 8.35L9.5813 15.3893C9.44461 15.5259 9.44461 15.7476 9.5813 15.8842C9.71798 16.0209 9.93959 16.0209 10.0763 15.8842L17.713 8.24749C17.8497 8.1108 17.8497 7.8892 17.713 7.75251L10.0763 0.115759C9.93959 -0.0209245 9.71798 -0.0209246 9.5813 0.115759C9.44461 0.252443 9.44461 0.47405 9.5813 0.610734L16.6206 7.65L0.494975 7.65C0.301675 7.65 0.144975 7.8067 0.144975 8Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 10 10"
+        id="arrow-up-forward"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.752415 9.24759C0.889098 9.38427 1.11071 9.38427 1.24739 9.24759L8.65 1.84497V8.20009C8.65 8.39339 8.8067 8.55009 9 8.55009C9.1933 8.55009 9.35 8.39339 9.35 8.20009V0.999997C9.35 0.806697 9.1933 0.649997 9 0.649997H1.79991C1.60661 0.649997 1.44991 0.806697 1.44991 0.999997C1.44991 1.1933 1.60661 1.35 1.79991 1.35H8.15503L0.752415 8.75261C0.615731 8.88929 0.615731 9.1109 0.752415 9.24759Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 6 6"
+        id="arrow-up-forward-sm"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.752537 5.24759C0.889221 5.38427 1.11083 5.38427 1.24751 5.24759L4.65002 1.84507V4.6001C4.65002 4.7934 4.80672 4.9501 5.00002 4.9501C5.19332 4.9501 5.35002 4.7934 5.35002 4.6001V1.0001C5.35002 0.806798 5.19332 0.650098 5.00002 0.650098H1.40002C1.20672 0.650098 1.05002 0.806798 1.05002 1.0001C1.05002 1.1934 1.20672 1.3501 1.40002 1.3501H4.15505L0.752537 4.75261C0.615854 4.88929 0.615854 5.1109 0.752537 5.24759Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="clock"
+      >
+        <path
+          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M12 6V12L16 14"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 14"
+        id="car"
+      >
+        <path
+          d="M1.5 9.14286V7.14634C1.5 6.17648 2.22754 5.39024 3.125 5.39024M1.5 9.14286C1.5 10.1127 2.22754 10.899 3.125 10.899H12.875C13.7725 10.899 14.5 10.1127 14.5 9.14286M1.5 9.14286V11.8293C1.5 12.4758 1.98502 13 2.58333 13H3.66667C4.26498 13 4.75 12.4758 4.75 11.8293V10.899M3.125 5.39024H12.875C13.7725 5.39024 14.5 6.17648 14.5 7.14634V9.14286M3.125 5.39024L3.99388 1.86908C4.12034 1.35659 4.54983 1 5.04063 1H11.0108C11.4771 1 11.8911 1.32245 12.0386 1.80051L13.1458 5.39024M14.5 9.14286V11.8293C14.5 12.4758 14.015 13 13.4167 13H12.3333C11.735 13 11.25 12.4758 11.25 11.8293V10.899M3.39583 8.02439H5.29167M10.7083 8.02439H12.6042"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="chevron-back"
+      >
+        <path
+          d="M15 6L9 12L15 18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="chevron-forward"
+      >
+        <path
+          d="M9 18L15 12L9 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 7 12"
+        id="chevron-forward-2"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.872657 0.871516C0.686639 1.0756 0.701288 1.39185 0.905376 1.57787L5.75709 6L0.905376 10.4221C0.701288 10.6081 0.686639 10.9244 0.872657 11.1285C1.05867 11.3326 1.37492 11.3472 1.57901 11.1612L6.83615 6.36953C6.9401 6.27479 6.99933 6.14065 6.99933 6C6.99933 5.85935 6.9401 5.72521 6.83615 5.63046L1.57901 0.838797C1.37492 0.652779 1.05867 0.667428 0.872657 0.871516Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 20"
+        id="heart"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.5575 0.72408C15.316 0.409805 16.129 0.248047 16.95 0.248047C17.771 0.248047 18.584 0.409805 19.3424 0.72408C20.1009 1.03836 20.79 1.49899 21.3705 2.07967C21.951 2.66002 22.4116 3.34906 22.7258 4.10742C23.0401 4.8659 23.2018 5.67886 23.2018 6.49987C23.2018 7.32088 23.0401 8.13385 22.7258 8.89232C22.4115 9.65074 21.9509 10.3398 21.3703 10.9202C21.3703 10.9202 21.3704 10.9202 21.3703 10.9202L12.5303 19.7602C12.2374 20.0531 11.7626 20.0531 11.4697 19.7602L2.62967 10.9202C1.45732 9.74786 0.798706 8.15782 0.798706 6.49987C0.798706 4.84193 1.45732 3.25189 2.62967 2.07954C3.80201 0.907198 5.39205 0.248582 7.05 0.248582C8.70794 0.248582 10.298 0.907198 11.4703 2.07954L12 2.60921L12.5295 2.07967C13.1099 1.49899 13.7991 1.03836 14.5575 0.72408ZM16.95 1.74805C16.326 1.74805 15.7082 1.87098 15.1317 2.10983C14.5553 2.34868 14.0316 2.69876 13.5905 3.14008L12.5303 4.2002C12.2374 4.4931 11.7626 4.4931 11.4697 4.2002L10.4097 3.1402C9.51863 2.24916 8.31012 1.74858 7.05 1.74858C5.78988 1.74858 4.58137 2.24916 3.69033 3.1402C2.79929 4.03124 2.29871 5.23975 2.29871 6.49987C2.29871 7.75999 2.79929 8.9685 3.69033 9.85954L12 18.1692L20.3097 9.85954C20.751 9.41844 21.1012 8.89458 21.34 8.31813C21.5789 7.74169 21.7018 7.12384 21.7018 6.49987C21.7018 5.87591 21.5789 5.25805 21.34 4.68161C21.1012 4.10517 20.7511 3.58143 20.3098 3.14033C19.8687 2.69901 19.3447 2.34868 18.7683 2.10983C18.1918 1.87098 17.574 1.74805 16.95 1.74805Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 12 15"
+        id="hourglass"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H11C11.2761 0.5 11.5 0.723858 11.5 1C11.5 1.27614 11.2761 1.5 11 1.5H10.25V2.62461C10.25 3.42333 9.9768 4.19805 9.47578 4.82009L7.60446 7.14339C7.60446 7.14339 7.60446 7.14338 7.60446 7.14339C7.3917 7.40755 7.39648 7.77735 7.61673 8.03641L9.41651 10.1533C9.41652 10.1533 9.41651 10.1533 9.41651 10.1533C9.95456 10.7861 10.25 11.5897 10.25 12.4204V13.5H11C11.2761 13.5 11.5 13.7239 11.5 14C11.5 14.2761 11.2761 14.5 11 14.5H1C0.723858 14.5 0.5 14.2761 0.5 14C0.5 13.7239 0.723858 13.5 1 13.5H1.75V12.4204C1.75 11.5897 2.04543 10.7861 2.58348 10.1533C2.58348 10.1533 2.58347 10.1533 2.58348 10.1533L4.38327 8.03641C4.60352 7.77736 4.60831 7.40756 4.39554 7.14339C4.39554 7.14339 4.39555 7.14339 4.39554 7.14339L2.52422 4.82009C2.0232 4.19805 1.75 3.42333 1.75 2.62461V1.5H1C0.723858 1.5 0.5 1.27614 0.5 1ZM2.75 1.5V2.62461C2.75 3.19512 2.94514 3.74849 3.30302 4.19281C3.30302 4.19281 3.30301 4.19281 3.30302 4.19281L5.17434 6.51611C5.68858 7.15458 5.67612 8.05962 5.14513 8.68415C5.14513 8.68415 5.14514 8.68414 5.14513 8.68415L3.34534 10.8011C2.96104 11.253 2.75 11.8271 2.75 12.4204V13.5H9.25V12.4204C9.25 11.8271 9.03897 11.2531 8.65467 10.8011L6.85487 8.68415C6.3239 8.05963 6.31141 7.15459 6.82566 6.51611L8.69698 4.19281C9.05486 3.74849 9.25 3.19513 9.25 2.62461V1.5H2.75Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 13 10"
+        id="metro"
+      >
+        <rect
+          y="0.552734"
+          width="13"
+          height="8.89474"
+          fill="url(#pattern0_319_1120)"
+        ></rect>
+        <defs>
+          <pattern
+            id="pattern0_319_1120"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use
+              xlink:href="#image0_319_1120"
+              transform="scale(0.00657895 0.00961538)"
+            ></use>
+          </pattern>
+          <image
+            id="image0_319_1120"
+            width="152"
+            height="104"
+            xlink:href="data:image/png;base64,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"
+          ></image>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 11 12"
+        id="navigation"
+      >
+        <g clip-path="url(#clip0_318_1076)">
+          <path
+            d="M5.65788 9.28533L8.93683 10.8834C9.55145 11.1829 10.207 10.5564 9.93786 9.92666L6.31365 1.44841C6.06153 0.858611 5.23114 0.848231 4.96443 1.43154L1.0697 9.94937C0.785085 10.5718 1.42413 11.2145 2.04597 10.9311L5.65788 9.28533Z"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_318_1076">
+            <rect width="11" height="12" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 30 30"
+        id="play"
+      >
+        <g clip-path="url(#clip0_516_780)">
+          <path
+            d="M27 13.268C28.3333 14.0378 28.3333 15.9623 27 16.7321L10.5 26.2583C9.16667 27.0281 7.5 26.0659 7.5 24.5263L7.5 5.47372C7.5 3.93412 9.16667 2.97187 10.5 3.74167L27 13.268Z"
+            fill="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_516_780">
+            <rect width="30" height="30" fill="currentColor"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 22 22"
+        id="star"
+      >
+        <g clip-path="url(#clip0_513_780)">
+          <path
+            d="M10.3343 2.04893C10.5438 1.40402 11.4562 1.40402 11.6657 2.04894L13.3125 7.11713C13.4062 7.40554 13.675 7.60081 13.9782 7.60081H19.3072C19.9854 7.60081 20.2673 8.46854 19.7187 8.86712L15.4074 11.9994C15.1621 12.1777 15.0594 12.4936 15.1531 12.7821L16.7999 17.8503C17.0094 18.4952 16.2713 19.0315 15.7227 18.6329L11.4114 15.5006C11.1661 15.3223 10.8339 15.3223 10.5886 15.5006L6.27729 18.6329C5.72869 19.0315 4.99056 18.4952 5.2001 17.8503L6.84686 12.7821C6.94057 12.4936 6.83791 12.1777 6.59257 11.9994L2.28131 8.86712C1.73271 8.46854 2.01465 7.60081 2.69276 7.60081H8.02177C8.32503 7.60081 8.59379 7.40554 8.68751 7.11712L10.3343 2.04893Z"
+            fill="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_513_780">
+            <rect width="22" height="22" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13 13"
+        id="telegram"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M10.8573 2.715C10.9809 2.66299 11.1161 2.64506 11.249 2.66306C11.3818 2.68106 11.5074 2.73433 11.6127 2.81734C11.7179 2.90035 11.799 3.01005 11.8475 3.13504C11.896 3.26002 11.9101 3.39572 11.8883 3.528L10.7543 10.4065C10.6443 11.07 9.91632 11.4505 9.30782 11.12C8.79882 10.8435 8.04282 10.4175 7.36282 9.973C7.02282 9.7505 5.98132 9.038 6.10932 8.531C6.21932 8.0975 7.96932 6.4685 8.96932 5.5C9.36182 5.1195 9.18282 4.9 8.71932 5.25C7.56832 6.119 5.72032 7.4405 5.10932 7.8125C4.57032 8.1405 4.28932 8.1965 3.95332 8.1405C3.34032 8.0385 2.77182 7.8805 2.30782 7.688C1.68082 7.428 1.71132 6.566 2.30732 6.315L10.8573 2.715Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 21 20"
+        id="telegram-2"
+      >
+        <g clip-path="url(#clip0_229_27)">
+          <circle cx="10.5" cy="10" r="10" fill="white"></circle>
+          <path
+            d="M10.5 0C4.97548 0 0.5 4.47613 0.5 10C0.5 15.5239 4.97613 20 10.5 20C16.0245 20 20.5 15.5239 20.5 10C20.5 4.47613 16.0239 0 10.5 0ZM15.4116 6.85097L13.7703 14.5852C13.649 15.1335 13.3226 15.2665 12.8671 15.0084L10.3671 13.1658L9.16129 14.3271C9.02839 14.46 8.91548 14.5729 8.65742 14.5729L8.83484 12.0284L13.4677 7.84258C13.6697 7.66516 13.4232 7.56452 13.1568 7.74194L7.43097 11.3465L4.96323 10.5761C4.4271 10.4071 4.41484 10.04 5.07613 9.78194L14.7174 6.06387C15.1652 5.90258 15.5561 6.1729 15.411 6.85032L15.4116 6.85097Z"
+            fill="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_229_27">
+            <rect
+              width="20"
+              height="20"
+              fill="white"
+              transform="translate(0.5)"
+            ></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="telegram-3"
+      >
+        <path
+          d="M4.7562 9.87447C7.70901 8.60437 9.67801 7.76707 10.6631 7.36247C13.4761 6.20737 14.0606 6.00677 14.4415 6.00007C14.5253 5.99867 14.7127 6.01917 14.834 6.11637C14.9365 6.19847 14.9647 6.30937 14.9782 6.38717C14.9917 6.46497 15.0085 6.64227 14.9951 6.78087C14.8427 8.36207 14.1831 12.1993 13.8476 13.9703C13.7056 14.7197 13.426 14.971 13.1553 14.9955C12.5671 15.049 12.1205 14.6118 11.5508 14.2431C10.6593 13.6661 10.1557 13.307 9.29031 12.744C8.29031 12.0934 8.93861 11.7358 9.50851 11.1514C9.65761 10.9985 12.2493 8.67117 12.2995 8.46007C12.3057 8.43357 12.3115 8.33517 12.2523 8.28327C12.1931 8.23127 12.1057 8.24906 12.0426 8.26316C11.9532 8.28316 10.5291 9.21247 7.7702 11.0512C7.3659 11.3252 6.9998 11.4587 6.6717 11.4517C6.3101 11.444 5.61441 11.2498 5.09721 11.0839C4.46292 10.8803 3.95876 10.7727 4.00266 10.427C4.02553 10.2469 4.27672 10.0627 4.7562 9.87447Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 22 14"
+        id="ticket"
+      >
+        <g clip-path="url(#clip0_475_411)">
+          <path
+            d="M1.5 2.8C1.5 1.80589 2.30589 1 3.3 1H18.9C19.8941 1 20.7 1.80589 20.7 2.8V11.2C20.7 12.1941 19.8941 13 18.9 13H3.3C2.30589 13 1.5 12.1941 1.5 11.2V2.8Z"
+            stroke="currentColor"
+          ></path>
+          <path
+            d="M13.4992 7.0001C13.4992 8.32558 12.4247 9.4001 11.0992 9.4001C9.77374 9.4001 8.69922 8.32558 8.69922 7.0001C8.69922 5.67462 9.77374 4.6001 11.0992 4.6001C12.4247 4.6001 13.4992 5.67462 13.4992 7.0001Z"
+            stroke="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_475_411">
+            <rect
+              width="21"
+              height="14"
+              fill="white"
+              transform="translate(0.5)"
+            ></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="timer"
+      >
+        <path
+          d="M12 8L10.45 11.45L7 13L10.45 14.55L12 18L13.55 14.55L17 13L13.55 11.45L12 8ZM9 3V1H15V3H9ZM12 22C10.7667 22 9.604 21.7623 8.512 21.287C7.42 20.8117 6.466 20.166 5.65 19.35C4.83334 18.5333 4.18733 17.579 3.712 16.487C3.23667 15.395 2.99933 14.2327 3 13C3 11.7667 3.23767 10.604 3.713 9.512C4.18833 8.42 4.834 7.466 5.65 6.65C6.46667 5.83333 7.421 5.18733 8.513 4.712C9.605 4.23667 10.7673 3.99933 12 4C13.0333 4 14.025 4.16667 14.975 4.5C15.925 4.83333 16.8167 5.31667 17.65 5.95L19.05 4.55L20.45 5.95L19.05 7.35C19.6833 8.18333 20.1667 9.075 20.5 10.025C20.8333 10.975 21 11.9667 21 13C21 14.2333 20.7623 15.396 20.287 16.488C19.8117 17.58 19.166 18.534 18.35 19.35C17.5333 20.1667 16.579 20.8127 15.487 21.288C14.395 21.7633 13.2327 22.0007 12 22ZM12 20C13.9333 20 15.5833 19.3167 16.95 17.95C18.3167 16.5833 19 14.9333 19 13C19 11.0667 18.3167 9.41667 16.95 8.05C15.5833 6.68333 13.9333 6 12 6C10.0667 6 8.41667 6.68333 7.05 8.05C5.68334 9.41667 5 11.0667 5 13C5 14.9333 5.68334 16.5833 7.05 17.95C8.41667 19.3167 10.0667 20 12 20Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="vk"
+      >
+        <path
+          d="M10.5335 14C6.4336 14 4.0959 11.0024 4 6.0064H6.0619C6.1279 9.6701 7.6384 11.2202 8.8372 11.5404V6.0064H10.7732V9.1641C11.954 9.0296 13.2008 7.5885 13.6204 6H15.5505C15.3931 6.8223 15.0787 7.601 14.627 8.2876C14.1753 8.9742 13.5959 9.5539 12.9251 9.9904C13.6737 10.3886 14.3348 10.9518 14.8648 11.6429C15.3949 12.334 15.7818 13.1374 16 14H13.8721C13.4166 12.482 12.2777 11.3034 10.7732 11.1433V14H10.5395H10.5335Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13 13"
+        id="whatsapp"
+      >
+        <g clip-path="url(#clip0_220_509)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.88773 4.11205C5.78793 3.84667 5.67266 3.8656 5.59593 3.8627C5.51912 3.85986 5.45188 3.86127 5.34812 3.86296C5.26033 3.86439 5.11651 3.887 4.99112 4.01326C4.86557 4.13931 4.5138 4.44245 4.48947 5.08494C4.4653 5.72732 4.91322 6.36564 4.97577 6.45498C5.03828 6.54465 5.8311 7.93707 7.14887 8.50975C8.46679 9.08225 8.47368 8.90774 8.71544 8.89494C8.95743 8.88228 9.50589 8.60792 9.62713 8.30729C9.74835 8.00666 9.7581 7.74528 9.72723 7.68953C9.69639 7.63396 9.61005 7.59786 9.48091 7.52781C9.35162 7.45761 8.71696 7.1177 8.59794 7.06961C8.47886 7.0217 8.392 6.99676 8.2993 7.12419C8.20656 7.25127 7.94326 7.53596 7.86346 7.62032C7.7833 7.70469 7.70617 7.71252 7.57691 7.64211C7.44801 7.57208 7.02911 7.41833 6.54337 6.955C6.16541 6.59453 5.91733 6.15711 5.84542 6.02368C5.77349 5.89016 5.84495 5.82203 5.91339 5.75957C5.97475 5.70315 6.05066 5.61189 6.11945 5.5381C6.18787 5.46432 6.21201 5.41084 6.25916 5.32522C6.3062 5.23979 6.28729 5.16275 6.25677 5.09621C6.22623 5.0297 5.98748 4.37743 5.88773 4.11205Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M7.06395 2C8.24166 2 9.34859 2.45473 10.1807 3.28044C11.0113 4.10459 11.4688 5.19999 11.4688 6.36481C11.4688 7.52952 11.0113 8.62489 10.1807 9.44909C9.34852 10.2748 8.24162 10.7296 7.06395 10.7296C6.3185 10.7296 5.58177 10.5416 4.93334 10.1859L4.6517 10.0314L4.34553 10.1286L2.90525 10.5861L3.35935 9.24671L3.4718 8.91505L3.28967 8.61591C2.87734 7.93862 2.65939 7.16019 2.65939 6.36481C2.65939 5.19999 3.11684 4.10459 3.94745 3.28041C4.77959 2.45473 5.88638 2 7.06395 2ZM7.06395 1.25C4.2173 1.25 1.90939 3.53987 1.90939 6.36481C1.90939 7.33112 2.17967 8.23491 2.64905 9.00591L1.71875 11.75L4.57259 10.8434C5.31106 11.2485 6.16037 11.4796 7.06395 11.4796C9.91098 11.4796 12.2188 9.18943 12.2188 6.36481C12.2188 3.53987 9.91098 1.25 7.06395 1.25Z"
+            fill="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_220_509">
+            <rect
+              width="12"
+              height="12"
+              fill="white"
+              transform="translate(0.96875 0.5)"
+            ></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="whatsapp-2"
+      >
+        <g clip-path="url(#clip0_229_22)">
+          <circle cx="10" cy="10" r="10" fill="white"></circle>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.9971 0C4.48428 0 0 4.48553 0 9.99991C0 12.1868 0.705268 14.215 1.90417 15.8612L0.658162 19.5766L4.50185 18.3481C6.08275 19.3946 7.96934 20 10.0029 20C15.5157 20 20 15.5143 20 10.0001C20 4.48571 15.5157 0.000165304 10.0029 0.000165304L9.9971 0ZM7.20535 5.07951C7.01145 4.61511 6.86449 4.59753 6.57074 4.58558C6.47072 4.57978 6.35925 4.57397 6.23568 4.57397C5.85352 4.57397 5.45394 4.68563 5.21294 4.93252C4.91918 5.23233 4.19034 5.93182 4.19034 7.36633C4.19034 8.80084 5.23649 10.1882 5.37748 10.3823C5.52444 10.5761 7.41699 13.5626 10.3555 14.7798C12.6535 15.7321 13.3354 15.6439 13.8584 15.5322C14.6224 15.3676 15.5804 14.803 15.8214 14.1213C16.0624 13.4392 16.0624 12.8572 15.9918 12.7337C15.9213 12.6103 15.7272 12.5399 15.4335 12.3928C15.1397 12.2458 13.7114 11.5403 13.441 11.4462C13.1765 11.3463 12.9239 11.3817 12.7242 11.6639C12.442 12.0578 12.1658 12.4576 11.9424 12.6985C11.7661 12.8867 11.478 12.9102 11.2371 12.8102C10.9139 12.6751 10.0089 12.3574 8.89208 11.3639C8.02807 10.5939 7.4404 9.63573 7.27005 9.3477C7.09954 9.05386 7.25245 8.88313 7.38747 8.72452C7.53443 8.54218 7.67543 8.41293 7.82239 8.24237C7.96935 8.07197 8.05163 7.9837 8.14568 7.78378C8.24569 7.58982 8.17502 7.38989 8.10453 7.24289C8.03403 7.09589 7.44636 5.66138 7.20535 5.07951Z"
+            fill="currentColor"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_229_22">
+            <rect width="20" height="20" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="youtube"
+      >
+        <path
+          d="M15.7 7.2143C15.55 6.7143 15.175 6.3571 14.65 6.2143C13.75 6 9.925 6 9.925 6C9.925 6 6.175 6 5.2 6.2143C4.675 6.3571 4.3 6.7143 4.15 7.2143C4 8.1429 4 10 4 10C4 10 4 11.8571 4.225 12.7857C4.375 13.2857 4.75 13.6429 5.275 13.7857C6.175 14 10 14 10 14C10 14 13.75 14 14.725 13.7857C15.25 13.6429 15.625 13.2857 15.775 12.7857C16 11.8571 16 10 16 10C16 10 16 8.1429 15.7 7.2143ZM8.8 11.7143V8.2857L11.95 10L8.8 11.7143Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="locate"
+      >
+        <path
+          d="M17.5 8.33301C17.5 14.1663 10 19.1663 10 19.1663C10 19.1663 2.5 14.1663 2.5 8.33301C2.5 6.34388 3.29018 4.43623 4.6967 3.02971C6.10322 1.62318 8.01088 0.833008 10 0.833008C11.9891 0.833008 13.8968 1.62318 15.3033 3.02971C16.7098 4.43623 17.5 6.34388 17.5 8.33301Z"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M10 10.833C11.3807 10.833 12.5 9.71372 12.5 8.33301C12.5 6.9523 11.3807 5.83301 10 5.83301C8.61929 5.83301 7.5 6.9523 7.5 8.33301C7.5 9.71372 8.61929 10.833 10 10.833Z"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        id="phone"
+      >
+        <path
+          d="M18.3332 14.1004V16.6004C18.3341 16.8325 18.2866 17.0622 18.1936 17.2749C18.1006 17.4875 17.9643 17.6784 17.7933 17.8353C17.6222 17.9922 17.4203 18.1116 17.2005 18.186C16.9806 18.2603 16.7477 18.288 16.5165 18.2671C13.9522 17.9884 11.489 17.1122 9.32486 15.7087C7.31139 14.4293 5.60431 12.7222 4.32486 10.7087C2.91651 8.53474 2.04007 6.05957 1.76653 3.48374C1.7457 3.2533 1.77309 3.02104 1.84695 2.80176C1.9208 2.58248 2.03951 2.38098 2.1955 2.21009C2.3515 2.0392 2.54137 1.90266 2.75302 1.80917C2.96468 1.71569 3.19348 1.66729 3.42486 1.66707H5.92486C6.32928 1.66309 6.72136 1.80631 7.028 2.07002C7.33464 2.33373 7.53493 2.69995 7.59153 3.10041C7.69705 3.90046 7.89274 4.68601 8.17486 5.44207C8.28698 5.74034 8.31125 6.0645 8.24478 6.37614C8.17832 6.68778 8.02392 6.97383 7.79986 7.20041L6.74153 8.25874C7.92783 10.345 9.65524 12.0724 11.7415 13.2587L12.7999 12.2004C13.0264 11.9764 13.3125 11.8219 13.6241 11.7555C13.9358 11.689 14.2599 11.7133 14.5582 11.8254C15.3143 12.1075 16.0998 12.3032 16.8999 12.4087C17.3047 12.4658 17.6744 12.6697 17.9386 12.9817C18.2029 13.2936 18.3433 13.6917 18.3332 14.1004Z"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 18 21"
+        id="document"
+      >
+        <g clip-path="url(#clip0_512_186)">
+          <path
+            d="M5.50106 8.51765V12.2059C5.50106 14.0284 6.97852 15.5059 8.80106 15.5059C10.6236 15.5059 12.1011 14.0284 12.1011 12.2059V7.54706C12.1011 6.58218 11.3189 5.8 10.354 5.8C9.38913 5.8 8.60695 6.58219 8.60695 7.54706V12.0118M3.40009 1H14.2003C15.5258 1 16.6003 2.07454 16.6003 3.40005L16.6 17.8C16.6 19.1255 15.5255 20.2 14.2 20.2L3.39999 20.1999C2.0745 20.1999 0.999991 19.1254 1 17.7999L1.00009 3.39999C1.0001 2.07451 2.07462 1 3.40009 1Z"
+            stroke="currentColor"
+            stroke-linecap="round"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_512_186">
+            <rect width="18" height="21" fill="currentColor"></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+
+    <div class="layout">
+      <div class="overlay"></div>
+      <header class="header">
+        <div class="container position-relative">
+          <div class="header-wrap">
+            <a href="index.html" class="header-logo">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <ul class="header-menu d-none d-lg-flex">
+              <li class="parent">
+                <a href="services.html">Услуги и цены</a>
+                <ul>
+                  <li>
+                    <a href="service.html" class="submenu-link">Ортопедия</a>
+                    <ul>
+                      <li>
+                        <a href="service.html">Импланты Megagen</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Импланты Straumann</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Имплантация All-on-6</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="service.html" class="submenu-link">Ортодонтия</a>
+                    <ul>
+                      <li>
+                        <a href="service.html">Импланты Megagen</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Импланты Straumann</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Имплантация All-on-6</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="service.html" class="submenu-link">Хирургия</a>
+                    <ul>
+                      <li>
+                        <a href="service.html">Импланты Megagen</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Импланты Straumann</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Имплантация All-on-6</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="service.html" class="submenu-link">Имплантация</a>
+                    <ul>
+                      <li>
+                        <a href="service.html">Импланты Megagen</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Импланты Straumann</a>
+                      </li>
+                      <li>
+                        <a href="service.html">Имплантация All-on-6</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="doctors.html">Команда</a>
+              </li>
+              <li>
+                <a href="portfolio.html">Наши работы</a>
+              </li>
+              <li>
+                <a href="testimonials.html">Отзывы</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="header-contacts d-none d-lg-flex">
+              <a href="#" class="header-contacts-address" target="_blank">
+                Москва, ул. Викторенко, 9, ст. 1, эт. 2
+              </a>
+              <ul class="social header-social">
+                <li>
+                  <a href="#" target="_blank">
+                    <svg width="12" height="12">
+                      <use xlink:href="#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg width="12" height="12">
+                      <use xlink:href="#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="tel:+74951981000" class="header-contacts-phone">
+                +7 (495) 198-10-00
+              </a>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary header-btn"
+              data-fancybox
+              data-src="#modal-1"
+            >
+              Записаться
+            </button>
+            <button class="burger d-lg-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="header-mobile d-lg-none">
+            <div class="header-mobile-inner">
+              <ul class="header-mobile-menu">
+                <li>
+                  <div>
+                    <a href="services.html">Услуги и цены</a>
+                    <svg width="7" height="12">
+                      <use xlink:href="#chevron-forward-2"></use>
+                    </svg>
+                  </div>
+                  <ul>
+                    <li>
+                      <div>
+                        <a href="service.html">Ортопедия</a>
+                        <svg width="7" height="12">
+                          <use xlink:href="#chevron-forward-2"></use>
+                        </svg>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="service.html">Импланты Megagen</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Импланты Straumann</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Имплантация All-on-6</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="service.html">Ортодонтия</a>
+                        <svg width="7" height="12">
+                          <use xlink:href="#chevron-forward-2"></use>
+                        </svg>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="service.html">Импланты Megagen</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Импланты Straumann</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Имплантация All-on-6</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="service.html">Хирургия</a>
+                        <svg width="7" height="12">
+                          <use xlink:href="#chevron-forward-2"></use>
+                        </svg>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="service.html">Импланты Megagen</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Импланты Straumann</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Имплантация All-on-6</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="service.html">Имплантация</a>
+                        <svg width="7" height="12">
+                          <use xlink:href="#chevron-forward-2"></use>
+                        </svg>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="service.html">Импланты Megagen</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Импланты Straumann</a>
+                        </li>
+                        <li>
+                          <a href="service.html">Имплантация All-on-6</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="doctors.html">Команда</a>
+                </li>
+                <li>
+                  <a href="portfolio.html">Наши работы</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Отзывы</a>
+                </li>
+                <li>
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <div class="header-contacts">
+                <a href="tel:+74951981000" class="header-contacts-phone">
+                  +7 (495) 198-10-00
+                </a>
+                <a href="#" class="header-contacts-address" target="_blank">
+                  Москва, ул. Викторенко, 9, ст. 1, эт. 2
+                </a>
+                <ul class="social header-social">
+                  <li>
+                    <a href="#" target="_blank">
+                      <svg width="12" height="12">
+                        <use xlink:href="#whatsapp"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <svg width="12" height="12">
+                        <use xlink:href="#telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section page articles">
+          <div class="container">
+            <ul
+              class="breadcrumbs"
+              itemscope=""
+              itemtype="https://schema.org/BreadcrumbList"
+            >
+              <li
+                itemprop="itemListElement"
+                itemscope=""
+                itemtype="https://schema.org/ListItem"
+              >
+                <a itemprop="item" href="index.html">
+                  <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li
+                itemprop="itemListElement"
+                itemscope=""
+                itemtype="https://schema.org/ListItem"
+              >
+                <span itemprop="name">Наш блог</span>
+                <meta itemprop="position" content="2" />
+              </li>
+            </ul>
+            <h1 class="section-title">Наш блог</h1>
+            <div class="row articles-items">
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <article class="articles-card">
+                  <div class="articles-card-img">
+                    <img src="img/articles-card-img.jpg" alt="" />
+                  </div>
+                  <div class="articles-card-body">
+                    <h3 class="articles-card-title">
+                      Что лучше: циркониевая или керамическая коронка
+                    </h3>
+                    <p class="articles-card-text">
+                      Сравнение преимуществ и недостатков циркониевых и
+                      металлокерамических зубных коронок.
+                    </p>
+                    <a href="article.html" class="articles-card-link">
+                      <p>Подробнее</p>
+                      <span>
+                        <svg width="6" height="6">
+                          <use xlink:href="#arrow-up-forward-sm"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <ul class="pagination articles-pagination">
+              <li class="pagination-item"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">...</a></li>
+              <li class="pagination-item"><a href="#">8</a></li>
+              <li class="pagination-item"><a href="#">9</a></li>
+              <li class="pagination-item pagination-item-next">
+                <a href="#">
+                  <svg width="15" height="9">
+                    <use xlink:href="#arrow-forward-sm"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo-light.svg" alt="" />
+            </a>
+            <p class="footer-top-text">Стоматологическая клиника в Москве</p>
+          </div>
+          <div class="row footer-row">
+            <div class="col-lg-3">
+              <div class="footer-group">
+                <div class="footer-item">
+                  <h3 class="h4 footer-item-title">Напишите нам</h3>
+                  <ul class="footer-social">
+                    <li>
+                      <a
+                        href="#"
+                        class="btn btn-outline-primary footer-social-link"
+                        target="_blank"
+                      >
+                        <span>Telegram</span>
+                        <svg width="20" height="20">
+                          <use xlink:href="#telegram-2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="btn btn-outline-primary footer-social-link"
+                        target="_blank"
+                      >
+                        <span>WhatsApp</span>
+                        <svg width="20" height="20">
+                          <use xlink:href="#whatsapp-2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item">
+                  <h3 class="h4 footer-item-title">Наши соц. сети</h3>
+                  <ul class="social">
+                    <li>
+                      <a href="#" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="#telegram-3"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="#youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="footer-items">
+                <div class="footer-item">
+                  <h3 class="h4 footer-item-title">Услуги</h3>
+                  <ul class="footer-item-list">
+                    <li>
+                      <a href="service.html">Консультация и диагностика</a>
+                    </li>
+                    <li>
+                      <a href="service.html">Профессиональная гигиена GBT</a>
+                    </li>
+                    <li>
+                      <a href="service.html">Имплантация</a>
+                    </li>
+                    <li>
+                      <a href="service.html">Лечение во сне</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item">
+                  <h3 class="h4 footer-item-title">Разделы</h3>
+                  <ul class="footer-item-list">
+                    <li>
+                      <a href="doctors.html">Команда</a>
+                    </li>
+                    <li>
+                      <a href="prices.html">Цены</a>
+                    </li>
+                    <li>
+                      <a href="services.html">Технологии</a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html">Наши работы</a>
+                    </li>
+                    <li>
+                      <a href="testimonials.html">Отзывы</a>
+                    </li>
+                    <li>
+                      <a href="contacts.html">Контакты</a>
+                    </li>
+                    <li>
+                      <a href="#">Уголок потребителя</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item">
+                  <h3 class="h4 footer-item-title">Контакты</h3>
+                  <div class="footer-contacts">
+                    <div class="footer-contacts-item">
+                      <span class="footer-contacts-item-icon">
+                        <svg width="20" height="20">
+                          <use xlink:href="#phone"></use>
+                        </svg>
+                      </span>
+                      <div class="footer-contacts-item-info align-self-center">
+                        <span>Телефон</span>
+                        <div>
+                          <p>
+                            <a href="tel:+74951981000">+7 495 198 10 00</a>
+                          </p>
+                          <span>Ежедневно с 09:00 до 22:00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-contacts-item">
+                      <span class="footer-contacts-item-icon">
+                        <svg width="20" height="20">
+                          <use xlink:href="#locate"></use>
+                        </svg>
+                      </span>
+                      <div class="footer-contacts-item-info">
+                        <span>Адрес</span>
+                        <div>
+                          <p>
+                            <a
+                              href="https://yandex.ru/maps/org/akademiya/226700878554/?from=mapframe&ll=
+                            37.528316%2C55.794791&z=16
+                            "
+                              target="_blank"
+                            >
+                              Москва, улица Викторенко, 9, ст. 1, этаж 2
+                            </a>
+                          </p>
+                        </div>
+                        <div class="footer-contacts-item-badges">
+                          <span class="footer-contacts-item-badge badge-green">
+                            м. Аэропорт
+                          </span>
+                          <span class="footer-contacts-item-badge badge-blue">
+                            м. ЦСКА
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-text">
+              <p>ООО "СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА АКАДЕМИЯ"</p>
+              <p>
+                ИНН 7707459810 ОГРН 1217700587390 <br />
+                Регистрационный номер лицензии: <br class="d-sm-none" />
+                Л041-01137-77/01350371
+              </p>
+            </div>
+            <a href="#" target="_blank" class="footer-bottom-link">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="modal-1" class="popup" style="display: none">
+      <div class="popup-top">
+        <h3 class="popup-title">Запишитесь на прием</h3>
+        <p class="popup-text">
+          Оставьте ваши контакты, мы перезвоним и подберем удобное время записи
+        </p>
+      </div>
+      <form action="#" class="popup-form">
+        <input
+          type="text"
+          class="form-control form-control-custom"
+          placeholder="Ваше имя"
+          required
+        />
+        <input
+          type="tel"
+          class="form-control form-control-custom"
+          placeholder="+7 (999) 999 99-99"
+          required
+        />
+        <button
+          type="submit"
+          class="btn btn-light popup-form-btn"
+          data-fancybox
+          data-src="#modal-3"
+        >
+          Связаться со мной
+        </button>
+      </form>
+      <div class="popup-bottom">
+        <div class="popup-contacts">
+          <p class="popup-contacts-text">
+            Напишите нам в мессенджеры, если неудобно говорить, мы ответим в
+            течение 10 минут:
+          </p>
+          <ul class="social popup-contacts-social">
+            <li>
+              <a href="#" target="_blank">
+                <svg width="12" height="12">
+                  <use xlink:href="#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg width="12" height="12">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="popup-img">
+          <img src="img/popup-img-1.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-2" class="popup popup-testimonials" style="display: none">
+      <div class="popup-top">
+        <h3 class="popup-title">
+          Здесь вы можете оставить отзыв о работе клиники или специалиста
+        </h3>
+      </div>
+      <form action="#" class="popup-form">
+        <label class="form-group">
+          <span class="form-label">Ваш отзыв</span>
+          <textarea
+            class="form-control form-control-custom"
+            placeholder="Здравствуйте, хочу оставить отзыв о работе Анастасии Владимировны..."
+          ></textarea>
+        </label>
+        <div class="popup-form-group">
+          <input
+            type="text"
+            class="form-control form-control-custom"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="tel"
+            class="form-control form-control-custom"
+            placeholder="+7 (999) 999 99-99"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary popup-form-btn">
+          Отправить
+        </button>
+      </form>
+      <div class="popup-img">
+        <picture>
+          <source
+            srcset="img/popup-img-2.png"
+            type="image/png"
+            media="(min-width: 992px)"
+          />
+          <img src="img/popup-img-3.png" alt="" />
+        </picture>
+      </div>
+    </div>
+
+    <div id="modal-3" class="popup popup-success" style="display: none">
+      <div class="popup-success-wrap">
+        <h3 class="popup-title">
+          Спасибо! Заявка <br />
+          успешно отправлена
+        </h3>
+        <p class="popup-text">в ближайшее время мы свяжемся с вами!</p>
+      </div>
+    </div>
+
+    <div id="modal-4" class="popup" style="display: none">
+      <div class="popup-top">
+        <h3 class="popup-title mb-0">
+          После консультации получите PDF-файл с детальными описанием плана
+          лечения, этапами и стоимостью.
+        </h3>
+      </div>
+      <div class="popup-image">
+        <img src="img/popup-img-4.png" alt="" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.3/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

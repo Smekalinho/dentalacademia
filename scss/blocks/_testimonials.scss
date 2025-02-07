@@ -1,0 +1,349 @@
+.testimonials {
+  &-hero {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--color-blue-31);
+    color: var(--color-white);
+    min-height: 657px;
+    position: relative;
+    z-index: 1;
+
+    &-info {
+      max-width: 898px;
+
+      @media (max-width: 1199.98px) {
+        max-width: 500px;
+      }
+
+      @media (max-width: 991.98px) {
+        max-width: 300px;
+      }
+
+      @media (max-width: 767.98px) {
+        max-width: 100%;
+      }
+    }
+
+    &-stars {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      @media (max-width: 1199.98px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-size: 40px;
+
+      @media (max-width: 1199.98px) {
+        margin-bottom: 32px;
+        font-size: 24px;
+      }
+    }
+
+    &-text {
+      margin-bottom: 43px;
+      max-width: 588px;
+      font-weight: 500;
+      line-height: 130%;
+
+      @media (max-width: 1199.98px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &-btn {
+      @media (min-width: 992px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        min-width: 294px;
+        border-radius: 40px;
+      }
+    }
+
+    &-img {
+      width: 574px;
+      height: 576px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 1199.98px) {
+        width: 337px;
+        height: 274px;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      padding: 24px 16px;
+      min-height: auto;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-bottom: 372px;
+    }
+  }
+
+  &-videos {
+    margin-bottom: 39px;
+    row-gap: 20px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &-video {
+    height: 439px;
+  }
+
+  &-slider {
+    padding-bottom: 30px;
+
+    .swiper-slide {
+      @media (max-width: 575.98px) {
+        width: 333px;
+      }
+    }
+
+    &-badge {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 575.98px) {
+      overflow: inherit;
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--color-gray-EC);
+
+    &-top {
+      padding: 26px 24px;
+      background-color: var(--color-blue-31);
+      color: var(--color-white);
+      border-radius: 20px;
+    }
+
+    &-date {
+      margin-bottom: 16px;
+      display: block;
+      font-size: 12px;
+      line-height: 110%;
+      color: var(--color-gray-EC);
+    }
+
+    &-title {
+      font-weight: 400;
+    }
+
+    &-body {
+      padding: 34px 16px 32px 20px;
+    }
+
+    &-text {
+      height: 250px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--color-blue-31);
+
+      &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+        background-color: var(--color-blue-D1);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: var(--color-blue-31);
+      }
+    }
+
+    &-bottom {
+      margin-top: 38px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-btn {
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+
+    &-doctor {
+      span {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 110%;
+        color: var(--color-gray-AA);
+      }
+
+      a {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 130%;
+        transition: all 0.3s;
+        color: var(--color-blue-31);
+
+        &:hover {
+          color: var(--color-blue-31);
+        }
+      }
+    }
+  }
+
+  &-view-all-btn {
+    margin-top: 9px;
+    margin-left: auto;
+    display: block;
+    max-width: 277px;
+  }
+
+  &-services {
+    margin-top: 66px;
+
+    &-items {
+      margin-top: 64px;
+      row-gap: 16px;
+
+      @media (max-width: 991.98px) {
+        margin-top: 32px;
+      }
+    }
+
+    &-card {
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: 1px solid var(--color-blue-31);
+      border-radius: 20px;
+      min-height: 69px;
+
+      &-logo {
+        flex-shrink: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &-rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--color-blue-31);
+
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      margin-top: 64px;
+    }
+  }
+
+  &-nav {
+    margin: 0 0 32px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 64px;
+      gap: 10px;
+    }
+  }
+
+  &-btn {
+    border-color: var(--color-blue-D1);
+
+    &:hover {
+      border-color: var(--color-gray-EC) !important;
+      background-color: var(--color-gray-EC) !important;
+      color: var(--color-blue-31) !important;
+    }
+  }
+}
+
+.testimonials-slider-2 {
+  .swiper-wrapper {
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      transform: none !important;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1300px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .swiper-slide {
+    @media (max-width: 991.98px) {
+      width: auto;
+    }
+  }
+
+  .testimonials-card {
+    @media (max-width: 991.98px) {
+      max-width: 333px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 30px;
+    overflow: inherit;
+  }
+}

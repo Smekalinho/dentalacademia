@@ -1,0 +1,120 @@
+.parking {
+  &-row {
+    row-gap: 24px;
+  }
+
+  &-title {
+    margin-bottom: 32px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    counter-reset: parking-counter;
+  }
+
+  &-item {
+    counter-increment: parking-counter;
+
+    &-num {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-blue-31);
+      color: var(--color-white);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 1;
+      flex-shrink: 0;
+
+      &::before {
+        content: counter(parking-counter);
+      }
+    }
+
+    &-text {
+      line-height: 130%;
+      color: var(--color-black);
+    }
+  }
+
+  &-info {
+    margin-top: 40px;
+    padding: 16px;
+    background-color: var(--color-blue-31);
+    color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 76px;
+      height: 100px;
+      flex-shrink: 0;
+      background-color: var(--color-gray-EC);
+      color: var(--color-blue-31);
+      border-radius: 10px;
+
+      svg {
+        width: 22px;
+        height: 14px;
+      }
+
+      @media (max-width: 991.98px) {
+        width: 33px;
+        height: 77px;
+      }
+    }
+
+    &-text {
+      max-width: 468px;
+
+      h3 {
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 130%;
+
+        @media (max-width: 991.98px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      padding: 16px 10px 20px 7px;
+      gap: 12px;
+    }
+  }
+
+  &-img {
+    height: 437px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+      height: 272px;
+    }
+  }
+}

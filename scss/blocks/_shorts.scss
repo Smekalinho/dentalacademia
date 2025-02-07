@@ -1,0 +1,22 @@
+.shorts {
+  &-items {
+    row-gap: 20px;
+  }
+
+  &-item {
+    height: 439px;
+  }
+
+  &-more-btn {
+    margin: 20px 0 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: var(--color-blue-D1);
+    display: block;
+    max-width: 169px;
+
+    @media (max-width: 991.98px) {
+      margin: 32px auto 0 auto;
+    }
+  }
+}

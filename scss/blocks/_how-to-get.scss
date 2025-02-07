@@ -1,0 +1,112 @@
+.how-to-get {
+  &-row {
+    row-gap: 32px;
+  }
+
+  &-map {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+
+    @media (min-width: 1400px) {
+      min-width: 746px;
+    }
+
+    @media (max-width: 991.98px) {
+      height: 328px;
+    }
+  }
+
+  &-info {
+    background-color: var(--color-gray-EC);
+    overflow: hidden;
+    border-radius: 20px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &:first-child {
+        padding: 32px 16px 35px 16px;
+        background-color: var(--color-blue-31);
+        color: var(--color-white);
+        border-radius: 20px;
+
+        .how-to-get-info-block-icon {
+          background-color: var(--color-gray-EC);
+          color: var(--color-blue-31);
+        }
+      }
+
+      &:last-child {
+        padding: 29px 16px 32px 16px;
+        color: var(--color-blue-31);
+
+        @media (max-width: 991.98px) {
+          padding: 32px 16px 55px 16px;
+          gap: 24px;
+        }
+      }
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: var(--color-blue-31);
+        flex-shrink: 0;
+      }
+
+      &-text {
+        max-width: 171px;
+        width: 100%;
+
+        span {
+          display: block;
+          font-size: 14px;
+          line-height: 130%;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 130%;
+          color: var(--color-blue-81);
+        }
+
+        div {
+          margin-top: 3px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          p + p {
+            margin-top: 0;
+          }
+        }
+      }
+
+      &-btn {
+        flex-shrink: 0;
+
+        @media (max-width: 991.98px) {
+          padding: 14px;
+          line-height: 130%;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

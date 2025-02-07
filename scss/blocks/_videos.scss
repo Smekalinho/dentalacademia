@@ -1,0 +1,59 @@
+.videos {
+  .breadcrumbs {
+    @media (min-width: 992px) {
+      margin-bottom: 125px;
+    }
+  }
+
+  &-items {
+    row-gap: 64px;
+
+    @media (max-width: 991.98px) {
+      row-gap: 20px;
+    }
+  }
+
+  &-card {
+    height: 100%;
+
+    &-media {
+      margin-bottom: 16px;
+      height: 289px;
+
+      @media (max-width: 767.98px) {
+        height: 200px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 130%;
+      color: var(--color-black);
+      text-transform: none;
+    }
+
+    &-text {
+      font-weight: 500;
+      line-height: 130%;
+      color: var(--color-gray-8B);
+    }
+  }
+
+  &-more-btn {
+    margin: 64px auto 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: var(--color-blue-D1);
+    display: block;
+    max-width: 169px;
+
+    @media (max-width: 991.98px) {
+      margin-top: 32px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 81px;
+  }
+}

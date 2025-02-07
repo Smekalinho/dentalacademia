@@ -1,0 +1,264 @@
+.feedback {
+  &-wrap {
+    background-color: var(--color-blue-31);
+    color: var(--color-white);
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 991.98px) {
+      flex-direction: column-reverse;
+      padding: 20px 20px 0 20px;
+    }
+  }
+
+  &-img {
+    width: 344px;
+    height: 512px;
+    flex-shrink: 0;
+    align-self: flex-end;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+      margin: -22px auto 0 auto;
+      width: 234px;
+      height: 348px;
+    }
+  }
+
+  &-content {
+    padding: 32px 90px 32px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 24px;
+
+    @media (max-width: 991.98px) {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    line-height: 120%;
+    letter-spacing: -1px;
+
+    &.h3 {
+      font-size: 40px;
+
+      @media (max-width: 1199.98px) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+
+    @media (max-width: 991.98px) {
+      font-size: 14px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background-color: var(--color-gray-EC);
+      color: var(--color-blue-31);
+      border-radius: 50%;
+      flex-shrink: 0;
+
+      svg {
+        width: 24px;
+        height: 20px;
+      }
+
+      @media (max-width: 991.98px) {
+        border-radius: 10px;
+      }
+    }
+
+    &-text {
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: -1px;
+
+      @media (max-width: 991.98px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-btn {
+      padding: 15px 16px;
+      flex-shrink: 0;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 40px;
+
+      @media (max-width: 1199.98px) {
+        width: 100%;
+      }
+
+      @media (max-width: 991.98px) {
+        padding: 16px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-link {
+      padding: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 300;
+      width: 100%;
+      max-width: 337px;
+      border-radius: 40px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--color-blue-31) !important;
+        background-color: var(--color-white) !important;
+        border-color: var(--color-white) !important;
+        opacity: 0.8;
+      }
+
+      @media (max-width: 991.98px) {
+        padding: 17px 7px;
+        font-size: 12px;
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 991.98px) {
+      max-width: 176px;
+    }
+  }
+}
+
+.feedback-2 {
+  .feedback-wrap {
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 1200px) {
+      gap: 129px;
+    }
+
+    @media (max-width: 991.98px) {
+      padding-bottom: 39px;
+    }
+  }
+
+  .feedback-img {
+    width: 425px;
+    height: 426px;
+    z-index: -1;
+
+    @media (max-width: 991.98px) {
+      width: 190px;
+      height: 192px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .feedback-content {
+    width: 100%;
+    gap: 0;
+
+    @media (min-width: 992px) {
+      padding-right: 70px;
+    }
+  }
+
+  .feedback-title {
+    margin-bottom: 16px;
+  }
+
+  .feedback-text {
+    margin-bottom: 24px;
+  }
+
+  .feedback-info {
+    margin-bottom: 24px;
+
+    &-icon {
+      width: 44px;
+      height: 44px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+    }
+
+    &-text {
+      letter-spacing: normal;
+
+      @media (max-width: 991.98px) {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      padding-left: 24px;
+    }
+
+    @media (max-width: 991.98px) {
+      max-width: 221px;
+    }
+  }
+}

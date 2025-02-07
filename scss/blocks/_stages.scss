@@ -1,0 +1,110 @@
+.stages {
+  &-items {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+    counter-reset: stages-counter;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 26px;
+      width: 1px;
+      height: 100%;
+      background-color: var(--color-gray-EC);
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 21px;
+    counter-increment: stages-counter;
+
+    &-num {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-white);
+      position: relative;
+      z-index: 10;
+
+      &::before {
+        content: counter(stages-counter, decimal-leading-zero);
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 130%;
+        color: var(--color-blue-31);
+        background-color: var(--color-gray-EC);
+        border-radius: 50%;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      max-width: 585px;
+    }
+
+    &-title {
+      font-size: 20px;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: var(--color-blue-31);
+        color: var(--color-white);
+        flex-shrink: 0;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 130%;
+        color: var(--color-blue-31);
+
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-text {
+      line-height: 130%;
+      color: var(--color-blue-31);
+    }
+  }
+
+  &-btn {
+    margin-top: 28px;
+    border-color: var(--color-blue-D1);
+    display: block;
+    width: 100%;
+    max-width: 191px;
+
+    @media (max-width: 991.98px) {
+      margin: 32px auto 0 auto;
+    }
+  }
+}

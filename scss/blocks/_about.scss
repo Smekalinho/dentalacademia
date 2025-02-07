@@ -1,0 +1,124 @@
+.about {
+  &-hero {
+    &-row {
+      row-gap: 20px;
+    }
+
+    &-info {
+      padding: 20px;
+      background-color: var(--color-blue-31);
+      color: var(--color-white);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 100px;
+      min-height: 657px;
+      overflow: hidden;
+      border-radius: 20px;
+
+      @media (max-width: 991.98px) {
+        padding: 56px 16px 24px 16px;
+        min-height: auto;
+        gap: 32px;
+      }
+    }
+
+    &-title {
+      font-size: 40px;
+      max-width: 548px;
+
+      @media (max-width: 991.98px) {
+        font-size: 32px;
+      }
+    }
+
+    &-btn {
+      @media (min-width: 992px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        min-width: 294px;
+        border-radius: 40px;
+      }
+
+      @media (max-width: 991.98px) {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+    }
+
+    &-img {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 991.98px) {
+        height: 400px;
+      }
+    }
+
+    &-badge {
+      padding: 9px;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      font-size: 14px;
+      line-height: 130%;
+      color: var(--color-white);
+      border: 1px solid var(--color-white);
+      border-radius: 10px;
+
+      @media (max-width: 991.98px) {
+        top: 25px;
+        right: 20px;
+        font-size: 12px;
+      }
+    }
+
+    &-video-btn {
+      position: absolute;
+      right: 102px;
+      bottom: 34px;
+      padding: 0;
+      border: 0;
+      background-color: var(--color-purple);
+      color: var(--color-gray-D9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      svg {
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: 991.98px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 991.98px) {
+        right: 25px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

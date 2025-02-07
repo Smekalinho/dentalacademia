@@ -1,0 +1,151 @@
+.categories {
+  &-items {
+    row-gap: 31px;
+
+    @media (max-width: 991.98px) {
+      row-gap: 20px;
+    }
+  }
+
+  &-card {
+    padding: 32px 20px;
+    background-color: var(--color-blue-31);
+    color: var(--color-white);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 27px;
+    height: 100%;
+    min-height: 270px;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    &-group {
+      display: flex;
+      align-items: center;
+      gap: 8px 19px;
+      flex-wrap: wrap;
+    }
+
+    &-badge {
+      display: block;
+      width: 59px;
+      height: 23px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-icon {
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-title {
+      line-height: 140%;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-btn {
+      min-width: 130px;
+    }
+  }
+
+  &-banner {
+    padding: 32px 32px 18px 32px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(
+      90.96deg,
+      #121c27 0.81%,
+      rgba(166, 170, 173, 0.8) 54.51%,
+      #2d5377 98.82%
+    );
+    box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(9px);
+    color: var(--color-white);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    position: relative;
+
+    &-title {
+      margin-bottom: 11px;
+      font-weight: 400;
+      line-height: 110%;
+    }
+
+    &-text {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 110%;
+
+      @media (max-width: 991.98px) {
+        margin-bottom: 69px;
+        font-size: 12px;
+      }
+    }
+
+    &-btn {
+      min-width: 151px;
+    }
+
+    &-img {
+      width: 98px;
+      height: 98px;
+      opacity: 0.4;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 991.98px) {
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+        width: 96px;
+        height: 96px;
+        z-index: -1;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      padding: 32px;
+      background: linear-gradient(
+        97.87deg,
+        #121c27 6.34%,
+        rgba(166, 170, 173, 0.8) 103.74%
+      );
+    }
+  }
+}
